@@ -1,0 +1,36 @@
+.item-tag {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+  word-break: break-all;
+  letter-spacing: 5px;
+}
+
+.item-icon{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  .fa{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .icon-hidden{
+    display: none;
+  }
+
+  .icon-show{
+    display: block;
+    
+  }
+
+  &:hover {
+    .icon-hidden {
+      display: block;
+    }
+  }
+}
