@@ -1,0 +1,15 @@
+
+.booking-warp{
+  margin-bottom: -200px;
+  z-index: 1;
+  position: relative;
+  box-shadow: 1px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width: 991.98px){
+  .booking-warp{
+    margin-bottom: initial;
+    box-shadow: none;
+  }
+}
