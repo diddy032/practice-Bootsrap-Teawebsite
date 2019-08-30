@@ -12235,6 +12235,32 @@ body {
   display: block;
 }
 
+.product-items-icon {
+  position: relative;
+  height: 20px;
+  cursor: pointer;
+}
+
+.product-items-icon .fa {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.product-items-icon .icon-hidden {
+  display: none;
+}
+
+.product-items-icon .icon-show {
+  display: block;
+}
+
+.product-items-icon:hover .icon-hidden {
+  display: block;
+}
+
 .form-icon {
   position: absolute;
   top: 15px;
@@ -12324,5 +12350,53 @@ body {
   position: relative;
   top: 10px;
   border-bottom: 1px solid #594539;
+}
+
+.menu-warp {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #F0F0F2;
+}
+
+.menu-warp-first {
+  margin-top: 60px;
+  margin-bottom: -90px;
+}
+
+.menu-warp-second {
+  margin-top: -90px;
+  margin-bottom: 60px;
+  position: absolute;
+  z-index: 1;
+}
+
+@media (max-width: 991.98px) {
+  .menu-warp-first {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .menu-warp-second {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: initial;
+  }
+}
+
+.booking-warp {
+  margin-bottom: -200px;
+  z-index: 1;
+  position: relative;
+  -webkit-box-shadow: 1px 20px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 991.98px) {
+  .booking-warp {
+    margin-bottom: initial;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 /*# sourceMappingURL=all.css.map */

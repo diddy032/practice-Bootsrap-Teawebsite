@@ -34,3 +34,29 @@
     }
   }
 }
+
+.product-items-icon{
+  position: relative;;
+  height: 20px;
+  cursor: pointer;
+  .fa{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .icon-hidden{
+    display: none;
+  }
+
+  .icon-show{
+    display: block;
+    
+  }
+
+  &:hover {
+    .icon-hidden {
+      display: block;
+    }
+  }
+}

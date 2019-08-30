@@ -55,8 +55,113 @@
     </div>
   </nav>
 
-  <section>
-    <p>content</p>
+  <section class="">
+    <div class="container pb-5">
+      <div class="row">
+        <div class="col-lg-6 pb-4 pb-lg-0">
+          <img src="https://i.postimg.cc/rs206jsJ/brush-ceramics-tea-230491.jpg" class="img-fluid img-frame" alt="Responsive image">
+        </div>
+        <div class="col-lg-6">
+          <div class=" d-flex flex-column align-items-center align-items-lg-start">
+            <div class="h2">商品</div>
+            <div class="h2 text-accent">NT$ 450</div>
+          </div>
+          <ul>
+            <li>嚴選天然中藥材</li>
+            <li>不添加防腐劑</li>
+            <li>無添加物</li>
+            <li>不含糖、低熱量</li>
+          </ul>
+          <div class="form-row">
+            <div class="form-group col-md-6 mb-3">
+              <label for="product-num">數量</label>
+              <input type="number" class="form-control" id="product-num" placeholder="1" min="1" max="10" required>
+            </div>
+          </div>
+          <a class="btn btn-accent btn-block text-secondary font-weight-bold" href="car.html" role="button">加入購物車</a>
+          <a class="btn btn-outline-decorate btn-block font-weight-bold " href="" role="button">
+            <div class="product-items-icon">
+              <i class="fa fa-heart-o icon-show text-accent fa-lg"></i>
+              <i class="fa fa-heart icon-hidden text-secondary fa-lg"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <nav>
+        <div class="nav nav-pills justify-content-center" id="pills-nav" role="tablist">
+          <a class="nav-item nav-link active" id="nav-description-tab" data-toggle="tab" href="#nav-description"
+            role="tab" aria-controls="nav-description" aria-selected="true">商品介紹</a>
+          <a class="nav-item nav-link" id="nav-proinfo-tab" data-toggle="tab" href="#nav-proinfo" role="tab"
+            aria-controls="nav-proinfo" aria-selected="false">商品資訊</a>
+          <a class="nav-item nav-link" id="nav-reviews-tab" data-toggle="tab" href="#nav-reviews" role="tab"
+            aria-controls="nav-reviews" aria-selected="false">購買評價</a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active text-center" id="nav-description" role="tabpanel"
+          aria-labelledby="nav-description-tab">
+          <img src="https://i.postimg.cc/RZdcckhz/agriculture-1846649-1280.jpg" class="img-fluid img-frame mx-auto" alt="Responsive image" width="600">
+          <p>在每一次的挑戰後，讓自己休息片刻、調整狀態，忙碌上班族、職業婦女，別讓生活磨去你應有的光芒，我們提倡藥食同源，喜歡用中藥的方式調理身體與膚質，由內而外的毫無破綻的保養身體。</p>
+        </div>
+        <div class="tab-pane fade" id="nav-proinfo" role="tabpanel" aria-labelledby="nav-proinfo-tab">
+          <div class="container">
+            <dl class="row">
+              <dt class="col-3">製造方式</dt>
+              <dd class="col-9">機器製造</dd>
+
+              <dt class="col-3">商品產地</dt>
+              <dd class="col-9">台灣</dd>
+
+              <dt class="col-3">庫存</dt>
+              <dd class="col-9">10 件以上</dd>
+
+              <dt class="col-3">內容量</dt>
+              <dd class="col-9">6g x 10</dd>
+
+              <dt class="col-3">過敏原</dt>
+              <dd class="col-9">無</dd>
+
+              <dt class="col-3">保存方法</dt>
+              <dd class="col-9">常溫、避免高溫、乾燥、避免陽光直射</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-reviews" role="tabpanel" aria-labelledby="nav-reviews-tab">
+          <ul class="list-unstyled">
+            <li class="media">
+              <img src="https://randomuser.me/api/portraits/men/47.jpg" class="mr-3 rounded-circle" height="60px"
+                alt="...">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Clarence Carpenter</h5>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum distinctio nobis similique sit qui
+                quod nemo. Eligendi placeat doloribus excepturi!
+              </div>
+            </li>
+            <li class="media my-4">
+              <img src="https://randomuser.me/api/portraits/women/49.jpg" class="mr-3 rounded-circle" height="60px"
+                alt="...">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Crystal Welch</h5>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores tempore officia qui aut cum totam
+                pariatur beatae labore modi exercitationem.
+              </div>
+            </li>
+            <li class="media">
+              <img src="https://randomuser.me/api/portraits/women/18.jpg" class="mr-3 rounded-circle" height="60px"
+                alt="...">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Jennifer Lawrence</h5>
+                Fugiat natus tempore alias eligendi ex labore asperiores aliquid assumenda accusamus cupiditate.
+                Voluptates, neque
+                delectus necessitatibus molestias eaque exercitationem hic!
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
 
@@ -140,14 +245,11 @@
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script>
   <script src="stylesheets/all.js"></script>
 

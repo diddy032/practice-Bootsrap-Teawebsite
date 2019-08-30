@@ -34,7 +34,13 @@
             <a class="nav-link text-primary font-weight-bold" href="index.html">首頁</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary font-weight-bold" href="product.html">產品</a>
+            <a class="nav-link text-primary font-weight-bold" href="menu.html">飲品菜單</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary font-weight-bold" href="booking.html">線上預約</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary font-weight-bold" href="product.html">購買產品</a>
           </li>
           <li class="nav-item mr-lg-5 pr-lg-4">
             <a class="nav-link text-primary font-weight-bold" href="login.html">登入</a>
@@ -73,21 +79,25 @@
                 </div>
                 <nav>
                   <ul class="pagination my-0">
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">-</span>
-                      </a>
+                    <li class="page-item count1-minus">
+                      <div class="btn page-link" type="button">
+                        <span>-</span>
+                      </div>
                     </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
                     <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">+</span>
-                      </a>
+                      <div class="btn page-link count1-num" type="button">
+                        1
+                      </div>
+                    </li>
+                    <li class="page-item count1-add">
+                      <div class="btn page-link" type="button">
+                        <span>+</span>
+                      </div>
                     </li>
                   </ul>
                 </nav>
                 <div class="h5 my-0 text-primary d-none d-md-block d-lg-block d-xl-block">NT$ 550</div>
-                <a href="">
+                <a href="" data-toggle="modal" data-target="#car-modal">
                   <i class="fa fa-trash-o fa-lg text-primary d-none d-md-block d-lg-block d-xl-block"
                     aria-hidden="true"></i>
                 </a>
@@ -117,21 +127,25 @@
                 </div>
                 <nav>
                   <ul class="pagination my-0">
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">-</span>
-                      </a>
+                    <li class="page-item count2-minus">
+                      <div class="btn page-link" type="button">
+                        <span>-</span>
+                      </div>
                     </li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
                     <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">+</span>
-                      </a>
+                      <div class="btn page-link count2-num" type="button">
+                        2
+                      </div>
+                    </li>
+                    <li class="page-item count2-add">
+                      <div class="btn page-link" type="button">
+                        <span>+</span>
+                      </div>
                     </li>
                   </ul>
                 </nav>
                 <div class="h5 my-0 text-primary d-none d-md-block d-lg-block d-xl-block">NT$ 460</div>
-                <a href="">
+                <a href="" data-toggle="modal" data-target="#car-modal">
                   <i class="fa fa-trash-o fa-lg text-primary d-none d-md-block d-lg-block d-xl-block"
                     aria-hidden="true"></i>
                 </a>
@@ -161,21 +175,25 @@
                 </div>
                 <nav>
                   <ul class="pagination my-0">
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">-</span>
-                      </a>
+                    <li class="page-item count3-minus">
+                      <div class="btn page-link" type="button">
+                        <span>-</span>
+                      </div>
                     </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
                     <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">+</span>
-                      </a>
+                      <div class="btn page-link count3-num" type="button">
+                        1
+                      </div>
+                    </li>
+                    <li class="page-item count3-add">
+                      <div class="btn page-link" type="button">
+                        <span>+</span>
+                      </div>
                     </li>
                   </ul>
                 </nav>
                 <div class="h5 my-0 text-primary d-none d-md-block d-lg-block d-xl-block">NT$ 950</div>
-                <a href="">
+                <a href="" data-toggle="modal" data-target="#car-modal">
                   <i class="fa fa-trash-o fa-lg text-primary d-none d-md-block d-lg-block d-xl-block"
                     aria-hidden="true"></i>
                 </a>
@@ -224,12 +242,35 @@
     </div>
   </section>
 
+  <!-- Modal -->
+  <div class="modal fade" id="car-modal" tabindex="-1" role="dialog" aria-labelledby="car-modalTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="car-modalTitle">取消商品</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          確定取消該商品嗎？
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary">取消</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">確定</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <section class="bg-primary">
     <div class="container">
       <div class="row justify-content-lg-center py-5">
         <div class="col-lg-10 ">
           <div class="row">
-            <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+            <div
+              class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start mb-3 mb-lg-0">
               <img src="images/teaicon.svg" height="40px" alt="">
               <p class="h4 text-secondary my-0 mx-4 font-weight-light">追蹤我們的消息</p>
             </div>
@@ -251,8 +292,8 @@
       </div>
     </div>
   </section>
-  
-  
+
+
   <footer class="bg-secondary">
     <div class="container">
       <div class="row justify-content-md-center py-5">
@@ -299,16 +340,21 @@
       </div>
     </div>
   </footer>
-  
-  
-  
-  <script src="stylesheets/all.js"></script>
+
+
+
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script>
+  <script src="stylesheets/all.js"></script>
 
 </body>
 
